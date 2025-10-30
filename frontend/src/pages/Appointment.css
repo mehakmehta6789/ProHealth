@@ -1,0 +1,149 @@
+.appointment-container {
+  padding: 20px;
+}
+
+.doctor-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media(min-width: 640px) {
+  .doctor-details {
+    flex-direction: row;
+  }
+}
+
+.doctor-image img {
+  width: 100%;
+  max-width: 288px;
+  border-radius: 8px;
+  background-color: #e5f2ff; /* optional for bg-primary */
+}
+
+.doctor-info {
+  flex: 1;
+  border: 1px solid #ADADAD;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: -80px;
+  background: #fff;
+}
+
+@media(min-width: 640px) {
+  .doctor-info {
+    margin-top: 0;
+  }
+}
+
+.doctor-name {
+  font-size: 24px;
+  font-weight: 500;
+  color: #4a4a4a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.verified-icon {
+  width: 20px;
+}
+
+.doctor-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  color: #6b6b6b;
+}
+
+.doctor-meta button {
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 9999px;
+  border: 1px solid #ccc;
+}
+
+.doctor-about p:first-child {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.doctor-about p:last-child {
+  color: #6b6b6b;
+  margin-top: 4px;
+  max-width: 700px;
+}
+
+.doctor-fees {
+  color: #6b6b6b;
+  margin-top: 16px;
+}
+
+.doctor-fees span {
+  color: #262626;
+}
+
+.booking-slots {
+  margin-top: 32px;
+  font-weight: 500;
+  color: #565656;
+}
+
+.slot-dates {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.slot-date {
+  min-width: 64px;
+  text-align: center;
+  padding: 16px 0;
+  border-radius: 9999px;
+  cursor: pointer;
+  border: 1px solid #DDDDDD;
+}
+
+.slot-date.active {
+  background-color: #3B82F6; /* primary */
+  color: white;
+  border: none;
+}
+
+.slot-times {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.slot-time {
+  padding: 8px 20px;
+  border-radius: 9999px;
+  cursor: pointer;
+  border: 1px solid #B4B4B4;
+  color: #949494;
+  white-space: nowrap;
+}
+
+.slot-time.active {
+  background-color: #3B82F6;
+  color: white;
+  border: none;
+}
+
+.book-btn {
+  margin-top: 24px;
+  padding: 12px 80px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  background-color: #3B82F6;
+  border: none;
+  cursor: pointer;
+}

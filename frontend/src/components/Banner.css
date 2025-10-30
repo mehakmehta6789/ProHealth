@@ -1,0 +1,93 @@
+/* Banner container */
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a73e8; /* primary color */
+  border-radius: 12px;
+  padding: 40px 60px;
+  margin: 80px 0;
+  position: relative;
+  flex-wrap: wrap;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Left side */
+.banner-left {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Banner text */
+.banner-text {
+  margin-bottom: 20px;
+}
+
+.banner-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.banner-subtitle {
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+/* Button */
+.banner-button {
+  background-color: #fff;
+  color: #595959;
+  padding: 12px 32px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.banner-button:hover {
+  transform: scale(1.05);
+}
+
+/* Right side */
+.banner-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.banner-image {
+  max-width: 370px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .banner-right {
+    display: none;
+  }
+
+  .banner-title {
+    font-size: 28px;
+  }
+
+  .banner-subtitle {
+    font-size: 20px;
+  }
+
+  .banner-button {
+    margin-top: 20px;
+  }
+}

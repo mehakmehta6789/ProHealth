@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "urbanist", sans-serif;
+}
+
+p,
+li,
+a,
+button {
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+}
+a:hover {
+  color: #2e86c1;
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}

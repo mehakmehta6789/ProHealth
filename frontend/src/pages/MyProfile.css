@@ -1,0 +1,110 @@
+.profile-container {
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.profile-image-section {
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.profile-image {
+  width: 9rem;
+  border-radius: 0.5rem;
+}
+
+.profile-image.edit-mode {
+  opacity: 0.75;
+}
+
+.upload-icon {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  width: 2.5rem;
+}
+
+.profile-name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.875rem;
+  color: #262626;
+  margin-top: 1rem;
+}
+
+.edit-name {
+  background-color: #f3f4f6;
+  font-size: 1.875rem;
+  font-weight: 500;
+  max-width: 15rem;
+}
+
+.divider {
+  background-color: #ADADAD;
+  height: 1px;
+  border: none;
+  margin: 0.5rem 0;
+}
+
+.section-title {
+  color: #797979;
+  text-decoration: underline;
+  margin-top: 0.75rem;
+}
+
+.contact-info .section-title {
+  color: #4B5563;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap-y: 0.625rem;
+  margin-top: 0.75rem;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.value {
+  color: #3B82F6;
+}
+
+.input-field {
+  background-color: #f9fafb;
+  max-width: 13rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.input-field.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.profile-actions {
+  margin-top: 2.5rem;
+}
+
+.edit-btn {
+  border: 1px solid #4F46E5;
+  padding: 0.5rem 2rem;
+  border-radius: 9999px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: #4F46E5;
+  color: white;
+}
