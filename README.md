@@ -1,7 +1,4 @@
 # 🏥 ProHealth - Hospital Management System
-## 🎥 Project Demo Video
-
-
 
 ## 📖 Overview
 
